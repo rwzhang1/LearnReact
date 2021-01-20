@@ -1,4 +1,22 @@
 import React from "react"
+import JokeCard from "./JokeCard"
+
+function App() {
+  return (
+    <div className="jokes">
+      <JokeCard joke={{question:"This is question 1?", punchline:"This is puncline 1!"}}></JokeCard>
+      <JokeCard joke={{question:"This is question 2?", punchline:"This is puncline 2!"}}></JokeCard>
+      <JokeCard joke={{question:"This is question 3?", punchline:"This is puncline 3!"}}></JokeCard>
+      <JokeCard joke={{question:"This is question 4?", punchline:"This is puncline 4!"}}></JokeCard>
+      <JokeCard joke={{question:"This is question 5?", punchline:"This is puncline 5!"}}></JokeCard>
+    </div>
+  )
+}
+
+export default App;
+
+
+/*import React from "react"
 import ContactCard from "./ContactCard"
 
 function App() {
@@ -12,4 +30,4 @@ function App() {
   )
 }
 
-export default App;
+export default App; */
