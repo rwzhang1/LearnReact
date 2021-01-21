@@ -1,19 +1,39 @@
 import React from "react"
-import JokeCard from "./JokeCard"
+
+import productsData from "./allProducts"
+import Product from "./Product"
 
 function App() {
+  const productComponents = productsData.map(item => <Product product={item}/>)
+
   return (
-    <div className="jokes">
-      <JokeCard joke={{question:"This is question 1?", punchline:"This is puncline 1!"}}></JokeCard>
-      <JokeCard joke={{question:"This is question 2?", punchline:"This is puncline 2!"}}></JokeCard>
-      <JokeCard joke={{question:"This is question 3?", punchline:"This is puncline 3!"}}></JokeCard>
-      <JokeCard joke={{question:"This is question 4?", punchline:"This is puncline 4!"}}></JokeCard>
-      <JokeCard joke={{question:"This is question 5?", punchline:"This is puncline 5!"}}></JokeCard>
+    <div>
+      {productComponents}
     </div>
   )
 }
 
-export default App;
+
+
+export default App
+
+
+/* import React from "react"
+
+import Joke from "./Joke"
+import jokesData from "./jokesData"
+
+function App() {
+  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline} />)
+
+  return (
+    <div>
+      {jokeComponents}
+    </div>
+  )
+} 
+
+export default App */
 
 
 /*import React from "react"
