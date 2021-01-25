@@ -1,16 +1,27 @@
 import React from "react"
 
-import productsData from "./allProducts"
-import Product from "./Product"
 
+/*
 function App() {
-  const productComponents = productsData.map(item => <Product product={item}/>)
-
   return (
     <div>
-      {productComponents}
+      <h1>Code goes here</h1>
     </div>
   )
+} */
+
+class App extends React.Component {
+  methodHere() {
+    const date = new Date();
+  }
+  render() {
+  const style = this.methodHere()//can put styling here
+    return (
+      <div>
+        <h1>{this.props}</h1>
+      </div>
+    )
+  }
 }
 
 
