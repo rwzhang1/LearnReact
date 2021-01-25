@@ -1,5 +1,51 @@
 import React from "react"
 
+class App extends React.Component {
+  render() {
+    return(
+    <div>
+      <Header username="Peter"></Header>
+      <Greeting></Greeting>
+    </div>
+    )
+  }
+}
+
+class Header extends React.Component {
+  render() {
+    return(
+    <header>
+      <p>Welcome, {this.props.username}</p>
+    </header>
+    )
+  }
+}
+
+class Greeting extends React.Component {
+  render() {
+    const date = new Date()
+    const hours = date.getHours()
+    let timeOfDay
+
+    if (hours < 12) {
+      timeOfDay = "morning"
+    }
+    else if (hours>=12 && hours <17) {
+      timeOfDay = "afternoon"
+    }
+    else {
+      timeOfDay = "night"
+    }
+    return (
+      <h1>Good {timeOfDay} to you!</h1>
+    )
+  }
+}
+
+
+
+
+export default App
 
 /*
 function App() {
@@ -8,7 +54,8 @@ function App() {
       <h1>Code goes here</h1>
     </div>
   )
-} */
+} 
+
 
 class App extends React.Component {
   methodHere() {
@@ -23,10 +70,9 @@ class App extends React.Component {
     )
   }
 }
+*/
 
 
-
-export default App
 
 
 /* import React from "react"
