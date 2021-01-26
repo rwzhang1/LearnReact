@@ -1,6 +1,29 @@
 import React from "react"
 
 class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      answer: "yes"
+    }
+  }
+  render() {
+    return (
+      <div>
+        <h1>Is this important?{this.state.answer}</h1>
+      </div>
+    )
+  }
+}
+
+
+
+
+export default App
+
+
+/*
+class App extends React.Component {
   render() {
     return(
     <div>
@@ -42,10 +65,9 @@ class Greeting extends React.Component {
   }
 }
 
+*/
 
 
-
-export default App
 
 /*
 function App() {
