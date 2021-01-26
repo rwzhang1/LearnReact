@@ -4,6 +4,30 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
+      name: "peter",
+      age: "24"
+    }
+  }
+  render() {
+    return (
+      <div>
+        <h1>{this.state.name}</h1>
+        <h3>{this.state.age} years old</h3>
+      </div>
+    )
+  }
+}
+
+
+
+export default App
+
+
+/*
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
       answer: "yes"
     }
   }
@@ -15,12 +39,7 @@ class App extends React.Component {
     )
   }
 }
-
-
-
-
-export default App
-
+*/
 
 /*
 class App extends React.Component {
