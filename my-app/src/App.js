@@ -1,5 +1,24 @@
 import React from "react"
 
+function buttonfunction() {
+    console.log('abcdefokadokaswodkoawkdokwodk')
+}
+
+
+function App() {
+  return (
+    <div>
+      <button onClick={buttonfunction}>Button here</button>
+    </div>
+  )
+}
+
+
+
+export default App
+
+
+/*
 class App extends React.Component {
   constructor() {
     super()
@@ -21,11 +40,7 @@ class App extends React.Component {
     }
   }
 
-
-
-export default App
-
-
+*/
 
 /*
 class App extends React.Component {
