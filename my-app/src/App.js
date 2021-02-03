@@ -1,4 +1,17 @@
 import React from "react"
+import "./style.css"
+
+function App() {
+  return (
+    <div>
+      <input type="checkbox"></input>
+      <p className="checklist">placeholder</p>
+    </div>
+  )
+}
+
+export default App
+/*
 
 class App extends React.Component {
   constructor() {
@@ -35,7 +48,7 @@ class App extends React.Component {
 
 
 
-export default App
+
 
 /*
 function buttonfunction() {
