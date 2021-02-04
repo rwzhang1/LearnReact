@@ -1,6 +1,40 @@
 import React from "react"
 import "./style.css"
+/*
+function App() {
+ const quizQuestions = quizData.map(quiz => {
+    return (
+      <Quiz question={quiz.question} answer={quiz.answer}></Quiz>
+    )
 
+    return (
+      <div>
+        {quizQuestions}
+      </div>
+    )
+  })
+}*/
+
+import Quiz from "./Quiz"
+import quizData from "./dataFile"
+
+function App() {
+  const quizQuestions = quizData.map(quiz => {
+    return (
+      <Quiz key={quiz.id} question={quiz.question} answer={quiz.answer}></Quiz>
+    )
+  })
+
+  return (
+    <div>
+      {quizQuestions}
+    </div>
+  )
+} 
+
+export default App
+
+/*
 function App() {
   return (
     <div>
@@ -9,8 +43,9 @@ function App() {
     </div>
   )
 }
+*/
 
-export default App
+
 /*
 
 class App extends React.Component {
