@@ -1,4 +1,4 @@
-const quizData = [
+const randomData = [
     {
         id: 1,
         question: "what is the purpose of life",
@@ -11,4 +11,4 @@ const quizData = [
     }
 ]
 
-export default quizData
+export default randomData

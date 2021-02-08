@@ -1,5 +1,30 @@
 import React from "react"
 import "./style.css"
+import randomData from "./dataFile"
+import Random from "./Random"
+
+function App() {
+  const randomQuestions = randomData.map(asd => {
+    return (
+      <Random key={asd.id} question={asd.question} answer={asd.answer}></Random>
+    )
+  })
+  return (
+    <div>
+      {randomQuestions}
+    </div>
+  )
+}
+
+
+export default App
+
+
+
+
+
+
+
 /*
 function App() {
  const quizQuestions = quizData.map(quiz => {
@@ -14,7 +39,7 @@ function App() {
     )
   })
 }*/
-
+/*
 import Quiz from "./Quiz"
 import quizData from "./dataFile"
 
@@ -33,6 +58,7 @@ function App() {
 } 
 
 export default App
+*/
 
 /*
 function App() {
